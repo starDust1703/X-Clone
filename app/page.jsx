@@ -1,5 +1,4 @@
 "use client";
-import Logo from "./components/Logo";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -15,18 +14,26 @@ export default function Home() {
     )
   }
   return (
-    <div className="absolute h-full w-full">
-      <div className="h-full flex items-center">
-        <div className="h-full flex items-center justify-center w-[55%]">
-          <Logo width="50%" color="#E7E9EA" />
+    <div className="p-5">
+      <div className="h-full flex gap-10 items-start flex-col lg:flex-row lg:gap-20 lg:items-center">
+        <div className="flex items-center lg:justify-center lg:w-2xl">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              className="w-24 lg:w-[55%]"
+              fill={"#E7E9EA"}
+          >
+              <path d="M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z" />
+          </svg>
         </div>
         <div>
-          <p className="font-extrabold text-6xl mt-30">Happening now</p>
+          <p className="font-extrabold text-6xl lg:mt-30">Happening now</p>
           <p className="text-2xl my-10 font-bold">Join today.</p>
-          <div className="flex flex-col gap-4 items items-center w-[300px]">
+          <div className="flex flex-col gap-4 items-center w-[300px]">
             <CustomBtn image="google.svg" text="Sign up with Google" />
             <CustomBtn image="apple.svg" text="Sign up with Apple" />
-            <div className="flex items-center w-full gap-2">
+            <div className="flex items-center gap-2 w-full">
               <div className="flex-1 h-px bg-[#2F3336]"></div>
               OR
               <div className="flex-1 h-px bg-[#2F3336]"></div>
