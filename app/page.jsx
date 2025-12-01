@@ -43,7 +43,7 @@ export default function Home() {
             <div className="flex flex-col gap-4 w-full mt-10">
               <p className="font-bold">Already have an account?</p>
               <button className="flex items-center justify-center p-2 border border-[#536471] font-bold rounded-4xl cursor-pointer w-full transition-colors duration-200 hover:bg-[#ffffff19]">Sign in</button>
-              <a href="https://grok.com" target="_blank" className="flex items-center justify-center p-2 border border-[#536471] font-bold rounded-4xl cursor-pointer w-full transition-colors duration-200 hover:bg-[#ffffff19] gap-2"><img src="grok.svg" alt="icon" width={23} /> Get Grok</a>
+              <a href="https://grok.com" target="_blank" className="flex items-center justify-center p-2 border border-[#536471] font-bold rounded-4xl cursor-pointer w-full transition-colors duration-200 hover:bg-[#ffffff19] gap-2"><img src="grok.svg" alt="icon" width={23} className="invert" /> Get Grok</a>
             </div>
           </div>
         </div>
